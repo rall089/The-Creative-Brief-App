@@ -53,7 +53,7 @@ export default async function handler(req, res) {
 
     // 4. Call Anthropic
     const response = await anthropic.messages.create({
-      model: "claude-3-haiku-20240307",
+      model: "claude-sonnet-4-20250514",
       max_tokens: maxTokens,
       system: systemPrompt,
       messages: [{ role: "user", content: userMessage }]
