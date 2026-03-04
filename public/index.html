@@ -16,6 +16,7 @@
     #root { min-height: 100vh; min-height: 100dvh; }
     .animate-pulse { animation: pulse 1s ease-in-out infinite; }
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0} }
+    @media(max-width:768px){#root .brief-sidebar{display:none!important}#root .brief-main{width:100%!important;max-width:100%!important;margin-left:0!important}}
   </style>
   <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
